@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/listResult1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchActivity">
+
+    <!-- spinner -->
+
+
+    <Spinner
+        android:id="@+id/sSpinner"
+        android:layout_width="130dp"
+        android:layout_height="24dp"
+        app:layout_constraintEnd_toEndOf="@+id/tSpinner"
+        app:layout_constraintStart_toStartOf="@+id/tSpinner"
+        app:layout_constraintTop_toBottomOf="@+id/tSpinner" />
+
+    <Spinner
+        android:id="@+id/costSpinner"
+        android:layout_width="130dp"
+        android:layout_height="24dp"
+        app:layout_constraintEnd_toEndOf="@+id/cSpinner"
+        app:layout_constraintStart_toStartOf="@+id/cSpinner"
+        app:layout_constraintTop_toBottomOf="@+id/cSpinner" />
+
+    <EditText
+        android:id="@+id/userSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="@string/search"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/fspinner"
+        app:layout_constraintHorizontal_bias="0.282"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <Spinner
+        android:id="@+id/fspinner"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/userSearch"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/userSearch"
+        app:layout_constraintTop_toTopOf="@+id/userSearch"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tColor"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/color"
+        app:layout_constraintEnd_toStartOf="@+id/cSpinner"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userSearch" />
+
+    <Spinner
+        android:id="@+id/cSpinner"
+        android:layout_width="130dp"
+        android:layout_height="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tColor"
+        app:layout_constraintTop_toTopOf="@+id/tColor" />
+
+    <TextView
+        android:id="@+id/rCardJP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/level"
+        app:layout_constraintEnd_toEndOf="@+id/tCost"
+        app:layout_constraintStart_toStartOf="@+id/tCost"
+        app:layout_constraintTop_toBottomOf="@+id/tCost" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/soul"
+        app:layout_constraintEnd_toEndOf="@+id/textView5"
+        app:layout_constraintStart_toStartOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/card_type"
+        app:layout_constraintEnd_toEndOf="@+id/rCardJP"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="@+id/rCardJP"
+        app:layout_constraintTop_toBottomOf="@+id/rCardJP" />
+
+    <TextView
+        android:id="@+id/tCost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/cost"
+        app:layout_constraintEnd_toEndOf="@+id/tColor"
+        app:layout_constraintStart_toStartOf="@+id/tColor"
+        app:layout_constraintTop_toBottomOf="@+id/tColor" />
+
+    <Spinner
+        android:id="@+id/tSpinner"
+        android:layout_width="130dp"
+        android:layout_height="24dp"
+        app:layout_constraintEnd_toEndOf="@+id/lSpinner"
+        app:layout_constraintStart_toStartOf="@+id/lSpinner"
+        app:layout_constraintTop_toBottomOf="@+id/lSpinner" />
+
+    <Spinner
+        android:id="@+id/lSpinner"
+        android:layout_width="130dp"
+        android:layout_height="24dp"
+        app:layout_constraintEnd_toEndOf="@+id/costSpinner"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/costSpinner"
+        app:layout_constraintTop_toBottomOf="@+id/costSpinner" />
+
+    <Button
+        android:id="@+id/filterButton"
+        android:layout_width="124dp"
+        android:layout_height="39dp"
+        android:text="@string/filter"
+        app:layout_constraintEnd_toEndOf="@+id/SetSpinner"
+        app:layout_constraintStart_toStartOf="@+id/tSelectSet"
+        app:layout_constraintTop_toBottomOf="@+id/SetSpinner" />
+
+    <ListView
+        android:id="@+id/Results_screen"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/filterButton" />
+
+    <TextView
+        android:id="@+id/tSelectSet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/Select_Set"
+        app:layout_constraintEnd_toEndOf="@+id/textView4"
+        app:layout_constraintStart_toStartOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <Spinner
+        android:id="@+id/SetSpinner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/sSpinner"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/sSpinner"
+        app:layout_constraintTop_toBottomOf="@+id/sSpinner" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,86 @@
+<resources>
+    <string name="app_name">senior final</string>
+    <string name="search">Search</string>
+    <string name="color">Color</string>
+    <string name="level">Level</string>
+    <string name="cost">Cost</string>
+    <string name="card_type">Card Type</string>
+    <string name="soul">Soul</string>
+    <string name="filter">Filter</string>
+    <string name="name">Name</string>
+    <string name="id">Card ID</string>
+    <string name="jpName">JP Name</string>
+    <string name="sanity">sanity</string>
+    <string name="power">Power</string>
+    <string name="trigger">Trigger</string>
+    <string name="Series">Series</string>
+    <string name="seriesJP">JP Series</string>
+    <string name="rarity">Rarity</string>
+    <string name="effect">Card Effects</string>
+    <string name="attributes">Attributes</string>
+    <string name="deckbuilder">Deckbuilder</string>
+    <string name="deck1">Deck1</string>
+    <string name="set_name">set name</string>
+    <string name="Select_Set">Select Set:</string>
+
+
+    <!--set spinner add to here for each set -->
+    <string-array name="SetFilter">
+        <item></item>
+        <item>Marvel</item>
+        <item>Hololive</item>
+    </string-array>
+
+    <!--filter for colors -->
+    <string-array name="colorfilter">
+        <item></item>
+        <item>Red</item>
+        <item>Blue</item>
+        <item>Yellow</item>
+        <item>Green</item>
+    </string-array>
+
+    <!-- level filter -->
+    <string-array name="levelfilter">
+        <item></item>
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <!--cost filter-->
+    <string-array name="costfilter">
+        <item></item>
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+
+    <!--soul filter -->
+    <string-array name="soulfilter">
+        <item></item>
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <!--card type filter -->
+    <string-array name="typefilter">
+        <item></item>
+        <item>Character</item>
+        <item>Event</item>
+        <item>Climax</item>
+    </string-array>
+
+    <!-- search by filter -->
+    <string-array name="searchfilter">
+        <item>Name</item>
+        <item>ID</item>
+        <item>JP Name</item>
+    </string-array>
+</resources>
